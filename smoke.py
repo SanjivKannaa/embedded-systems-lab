@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 import time
 
 GPIO.setmode(GPIO.BCM)
-DO_PIN = 7  # Replace with the actual GPIO pin number
+DO_PIN = 7
 GPIO.setup(DO_PIN, GPIO.IN)
 try:
     while True:
@@ -13,7 +13,5 @@ try:
             gas_state = "No Gas"
         print(f"Gas State: {gas_state}")
         time.sleep(0.5)
-except KeyboardInterrupt:
-    print("Gas detection stopped by user")
-finally:
+except:
     GPIO.cleanup()

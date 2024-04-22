@@ -1,0 +1,1 @@
+sudo date -s "yyyy-mm-dd hh:mm:ss"
