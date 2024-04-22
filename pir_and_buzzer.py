@@ -18,6 +18,6 @@ try:
         else:
             print("No motion detected")
         time.sleep(0.1)
-except KeyboardInterrupt:
+except:
     pass
 GPIO.cleanup()
