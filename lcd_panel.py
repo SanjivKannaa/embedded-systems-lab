@@ -1,8 +1,6 @@
-from Adafruit_CharLCD import Adafruit_CharLCD # Importing Adafruit library for LCD
-from time import sleep # Importing sleep from time library to add delay in program
-# initiate lcd and specify pins
+from Adafruit_CharLCD import Adafruit_CharLCD
+from time import sleep
 lcd = Adafruit_CharLCD (rs=26, en=19, d4=13, d5=6, d6=5, d7=21, cols=16, lines=2)
 lcd.clear()
-# display text on LCD, \n = new line
 lcd.message('WELCOME TO \nIoT STARTERS')
 sleep(2)
